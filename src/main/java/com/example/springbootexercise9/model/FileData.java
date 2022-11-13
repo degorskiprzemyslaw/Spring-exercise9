@@ -1,7 +1,8 @@
-package model;
+package com.example.springbootexercise9.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -10,12 +11,13 @@ import java.util.UUID;
 @Entity
 @NoArgsConstructor
 @Getter
+@Setter
 @ToString
 public class FileData {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue
+    private UUID id;
 
     @Column(name = "file_name")
     private String fileName;

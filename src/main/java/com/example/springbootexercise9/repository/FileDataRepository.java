@@ -1,8 +1,7 @@
-package repository;
+package com.example.springbootexercise9.repository;
 
-import model.FileData;
+import com.example.springbootexercise9.model.FileData;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
